@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		659311AD1C67C63B0088D476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659311AC1C67C63B0088D476 /* AppDelegate.swift */; };
-		659311AF1C67C63B0088D476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659311AE1C67C63B0088D476 /* ViewController.swift */; };
 		659311B21C67C63B0088D476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659311B01C67C63B0088D476 /* Main.storyboard */; };
 		659311B41C67C63B0088D476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659311B31C67C63B0088D476 /* Assets.xcassets */; };
 		659311B71C67C63B0088D476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659311B51C67C63B0088D476 /* LaunchScreen.storyboard */; };
 		659311C21C67C63C0088D476 /* ChatBubbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659311C11C67C63C0088D476 /* ChatBubbleUITests.swift */; };
+		659311CF1C67C6940088D476 /* RightPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659311CE1C67C6940088D476 /* RightPostTableViewCell.swift */; };
+		659311D11C67C6A50088D476 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659311D01C67C6A50088D476 /* ChatTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* Begin PBXFileReference section */
 		659311A91C67C63B0088D476 /* ChatBubbleUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBubbleUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659311AC1C67C63B0088D476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		659311AE1C67C63B0088D476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		659311B11C67C63B0088D476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		659311B31C67C63B0088D476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		659311B61C67C63B0088D476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		659311BD1C67C63C0088D476 /* ChatBubbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBubbleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		659311C11C67C63C0088D476 /* ChatBubbleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleUITests.swift; sourceTree = "<group>"; };
 		659311C31C67C63C0088D476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659311CE1C67C6940088D476 /* RightPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightPostTableViewCell.swift; sourceTree = "<group>"; };
+		659311D01C67C6A50088D476 /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,9 @@
 		659311AB1C67C63B0088D476 /* ChatBubbleUI */ = {
 			isa = PBXGroup;
 			children = (
+				659311CD1C67C6640088D476 /* Views */,
+				659311CC1C67C6550088D476 /* Controllers */,
 				659311AC1C67C63B0088D476 /* AppDelegate.swift */,
-				659311AE1C67C63B0088D476 /* ViewController.swift */,
 				659311B01C67C63B0088D476 /* Main.storyboard */,
 				659311B31C67C63B0088D476 /* Assets.xcassets */,
 				659311B51C67C63B0088D476 /* LaunchScreen.storyboard */,
@@ -94,6 +97,22 @@
 				659311C31C67C63C0088D476 /* Info.plist */,
 			);
 			path = ChatBubbleUITests;
+			sourceTree = "<group>";
+		};
+		659311CC1C67C6550088D476 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				659311D01C67C6A50088D476 /* ChatTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		659311CD1C67C6640088D476 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				659311CE1C67C6940088D476 /* RightPostTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				659311AF1C67C63B0088D476 /* ViewController.swift in Sources */,
+				659311CF1C67C6940088D476 /* RightPostTableViewCell.swift in Sources */,
 				659311AD1C67C63B0088D476 /* AppDelegate.swift in Sources */,
+				659311D11C67C6A50088D476 /* ChatTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
