@@ -14,6 +14,7 @@
 		659311C21C67C63C0088D476 /* ChatBubbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659311C11C67C63C0088D476 /* ChatBubbleUITests.swift */; };
 		659311CF1C67C6940088D476 /* RightPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659311CE1C67C6940088D476 /* RightPostTableViewCell.swift */; };
 		659311D11C67C6A50088D476 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659311D01C67C6A50088D476 /* ChatTableViewController.swift */; };
+		659311D51C686F630088D476 /* LeftPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659311D41C686F630088D476 /* LeftPostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		659311C31C67C63C0088D476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659311CE1C67C6940088D476 /* RightPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightPostTableViewCell.swift; sourceTree = "<group>"; };
 		659311D01C67C6A50088D476 /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		659311D41C686F630088D476 /* LeftPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftPostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				659311CE1C67C6940088D476 /* RightPostTableViewCell.swift */,
+				659311D41C686F630088D476 /* LeftPostTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				659311CF1C67C6940088D476 /* RightPostTableViewCell.swift in Sources */,
 				659311AD1C67C63B0088D476 /* AppDelegate.swift in Sources */,
+				659311D51C686F630088D476 /* LeftPostTableViewCell.swift in Sources */,
 				659311D11C67C6A50088D476 /* ChatTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
